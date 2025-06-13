@@ -4,132 +4,184 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terra Tenebris – Landing Page</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <style>
     body {
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* fioletowo-mroczny gradient */
+      font-family: 'Jersey 15', sans-serif;
     }
   </style>
 </head>
-<body class="text-white font-sans">
+<body class="text-white bg-cover bg-center" style="background-image: url('background.png');">
+<header class="bg-black bg-opacity-70 p-6 shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold flex items-center gap-2">
+      <img src="icon.png" alt="Logo" class="h-16 w-16">
+      Terra Tenebris
+    </h1>
+    <nav class="space-x-4">
+      <a href="#gra" class="hover:underline">Gra</a>
+      <a href="#zespół" class="hover:underline">Zespół</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- HEADER -->
-  <header class="bg-purple-950 p-6 shadow-md shadow-purple-800">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-purple-300">Terra Tenebris</h1>
-      <nav class="space-x-4">
-        <a href="#gra" class="hover:underline text-purple-100">Gra</a>
-        <a href="#zespół" class="hover:underline text-purple-100">Zespół</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="text-center py-20" id="gra">
-    <h2 class="text-4xl font-bold mb-4 text-purple-200">Katowice ale to Roguelike</h2>
-    <p class="max-w-xl mx-auto mb-6 text-lg text-purple-100">
-      Zegar tyka. Winda zjeżdża w ciemność. Każde piętro to walka o życie Twojej córki. Pokonaj potwora, zanim ona odejdzie.
+<section id="gatunek" class="py-16 px-4 bg-black bg-opacity-50 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">Gatunek</h3>
+    <p class="mb-8 text-lg leading-relaxed">
+      Arena battler z elementami roguelike – mroczna, intensywna gra akcji inspirowana tytułami takimi jak 
+      <em>The Binding of Isaac: Rebirth</em> i <em>Vampire Survivors</em>.
     </p>
-    <img src="screenshot.jpg" alt="Screenshot gry" class="mx-auto rounded-xl shadow-2xl shadow-purple-900 max-w-md">
-  </section>
 
-  <!-- GALERIA/WIDEO -->
-<section class="py-16 bg-purple-900 bg-opacity-30">
-  <div class="max-w-6xl mx-auto text-center">
-    <h3 class="text-3xl font-bold mb-8 text-purple-300">Zobacz grę w akcji</h3>
-    <div class="flex flex-wrap justify-center gap-6">
-      
-      <!-- Obrazek 1 z linkiem do lightboxa -->
-      <a href="#lightbox1">
-        <img src="concept1.jpg" alt="Grafika 1" class="w-64 rounded-xl shadow-lg shadow-purple-800 cursor-pointer">
-      </a>
-      
-      <!-- Obrazek 2 z linkiem do lightboxa -->
-      <a href="#lightbox2">
-        <img src="concept2.jpg" alt="Grafika 2" class="w-64 rounded-xl shadow-lg shadow-purple-800 cursor-pointer">
-      </a>
-    </div>
+    <h3 class="text-2xl font-semibold mb-4">Dlaczego warto zagrać?</h3>
+    <ul class="list-disc list-inside space-y-4 text-lg leading-relaxed">
+      <li>
+        <strong>Ekscytująca, płynna akcja</strong> – każda walka to wyzwanie, a tempo gry sprawia, 
+        że trudno oderwać się choćby na chwilę.
+      </li>
+      <li>
+        <strong>Unikalny świat w pixelartowej oprawie</strong> – surowa, konsekwentna stylistyka wizualna 
+        przenosi gracza w niepokojąco spójny, niszczejący świat, gdzie technologia i zepsucie idą ramię w ramię.
+      </li>
+      <li>
+        <strong>Hipnotyzująca ścieżka dźwiękowa</strong> – muzyka to nie tylko tło, ale integralna część nastroju – 
+        niepokojąca, intensywna, momentami wręcz transowa.
+      </li>
+    </ul>
   </div>
 </section>
 
-<!-- Lightbox 1 -->
-<div id="lightbox1" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50" onclick="this.classList.add('hidden')">
-  <img src="concept1.jpg" class="max-w-full max-h-full rounded-lg shadow-lg">
-</div>
+  <section class="text-center py-20" id="gra">
+    <h2 class="text-4xl font-bold mb-4">W głąb ciemności. W stronę końca.</h2>
+    <p class="max-w-xl mx-auto mb-6 text-lg">
+      Zegar tyka. Winda zjeżdża w ciemność. Każde piętro to walka o życie Twojej córki. Pokonaj potwora, zanim ona odejdzie.
+    </p>
+    <img src="game_photo.png" alt="Screenshot gry" width="1024" class="mx-auto rounded-xl shadow-2xl  h-auto">
+  </section>
 
-<!-- Lightbox 2 -->
-<div id="lightbox2" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50" onclick="this.classList.add('hidden')">
-  <img src="concept2.jpg" class="max-w-full max-h-full rounded-lg shadow-lg">
-</div>
+<section class="text-center py-20 px-4" id="fabula">
+  <h2 class="text-4xl font-bold mb-6">Opis fabuły</h2>
+  <p class="max-w-2xl mx-auto mb-6 text-lg leading-relaxed">
+    Witaj w miejscu, gdzie światło nie sięga – głęboko pod powierzchnią, w opuszczonej kopalni coś zaczęło rosnąć. 
+    Coś, co nie powinno istnieć.
+  </p>
+  <p class="max-w-2xl mx-auto mb-6 text-lg leading-relaxed">
+    W Terra Tenebris wcielasz się w górnika, który nie szuka chwały – on nie ma już nic do stracenia. 
+    W akcie desperacji zjeżdża w głąb ziemi, by powstrzymać ekspansję bio‑kryształu – tajemniczego, pasożytniczego organizmu, 
+    który przekształca wszystko, czego dotknie: żywe ciała, maszyny, struktury… nic nie zostaje nietknięte.
+  </p>
+  <p class="max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
+    To samotna misja – bez gwarancji powrotu. Ale może właśnie dlatego jest tak ważna.
+  </p>
 
-<!-- Skrypt -->
-<script>
-  // Otwieranie lightboxów
-  document.querySelectorAll('a[href^="#lightbox"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.classList.remove('hidden');
-        target.classList.add('flex');
-      }
+  <h3 class="text-2xl font-semibold mb-4">Mechaniki rozgrywki i świat gry</h3>
+  <p class="max-w-2xl mx-auto mb-6 text-lg leading-relaxed">
+    Rozgrywka to nieprzerwany zjazd ku ciemności – dosłownie. Gracz wchodzi do przemysłowej windy, która zatrzymuje się na kolejnych, 
+    coraz bardziej niepokojących poziomach kopalni. Na każdym z nich czekają zmutowane kreatury, powstałe z połączenia kryształu i mięsa 
+    – przerażające, nieludzkie, nieprzewidywalne.
+  </p>
+  <p class="max-w-2xl mx-auto mb-6 text-lg leading-relaxed">
+    Każdy poziom to nowy układ, nowe wyzwania, nowe możliwości. System walki opiera się na szybkiej akcji, ciągłym ruchu i mądrym zarządzaniu 
+    zdobywanymi umiejętnościami. Elementy roguelike sprawiają, że każda rozgrywka to świeże doświadczenie – nie ma jednej drogi do zwycięstwa.
+  </p>
+  <p class="max-w-2xl mx-auto text-lg leading-relaxed">
+    Świat Terra Tenebris balansuje między industrialną technologią a organicznym koszmarem. Styl dieselpunk miesza się tu z mrokiem i tajemnicą. 
+    A gdzieś na samym końcu tego zjazdu… coś czeka. Coś, co być może w ogóle nie powinno się obudzić.
+  </p>
+</section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Zobacz grę w akcji</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#lightbox1">
+          <img src="concept1.jpg" alt="Grafika 1" class="w-64 rounded-xl shadow-lg cursor-pointer">
+        </a>
+        <a href="#lightbox2">
+          <img src="concept2.jpg" alt="Grafika 2" class="w-64 rounded-xl shadow-lg cursor-pointer">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox1" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50" onclick="this.classList.add('hidden')">
+    <img src="concept1.jpg" class="max-w-full max-h-full rounded-lg shadow-lg">
+  </div>
+
+  <div id="lightbox2" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50" onclick="this.classList.add('hidden')">
+    <img src="concept2.jpg" class="max-w-full max-h-full rounded-lg shadow-lg">
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#lightbox"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.classList.remove('hidden');
+          target.classList.add('flex');
+        }
+      });
     });
-  });
-</script>
+  </script>
 
-  <!-- SEKCJA ZESPOŁU -->
-  <section class="py-20 bg-[#1a1125]" id="zespół">
+  <section class="py-20" id="zespół">
     <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8 text-purple-200">Nasz Zespół</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-purple-100">
+      <h3 class="text-3xl font-bold mb-8">Nasz Zespół</h3>
+      <img src="screenshot.jpg" alt="Screenshot gry" class="mx-auto rounded-xl shadow-2xl max-w-md pb-2.5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div>
-          <img src="avatar1.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar1.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Krzysztof / JustMax</h4>
           <p>Lider</p>
         </div>
         <div>
-          <img src="avatar2.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar2.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Miłosz / Morshu</h4>
-          <p>Szef design</p>
+          <p>Head Designer</p>
         </div>
         <div>
-          <img src="avatar3.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar3.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Weronika / Abla</h4>
           <p>Design/Grafik</p>
         </div>
         <div>
-          <img src="avatar4.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar4.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Weronika / Wizzzy</h4>
           <p>Design/Grafik</p>
         </div>
         <div>
-          <img src="avatar5.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar5.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Mateusz / Matthias</h4>
           <p>Development</p>
         </div>
         <div>
-          <img src="avatar6.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar6.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Mateusz / Makuksik</h4>
           <p>Development</p>
         </div>
         <div>
-          <img src="avatar7.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar7.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Darek / Dakuro</h4>
           <p>Development</p>
         </div>
         <div>
-          <img src="avatar8.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-purple-500 shadow-md">
+          <img src="avatar8.png" alt="Avatar" class="w-24 h-24 rounded-full mx-auto mb-2 border-2 border-white shadow-md">
           <h4 class="text-xl font-semibold">Bartek / Kundy</h4>
           <p>Development</p>
         </div>
       </div>
-      <p class="mt-8 text-purple-300 text-sm">Tworzymy z pasji. Nasza kopalnia pomysłów nigdy nie zasypia.</p>
+      <p class="mt-8 text-sm">Tworzymy z pasji. Nasza kopalnia pomysłów nigdy nie tąpnie.</p>
     </div>
   </section>
 
-  <!-- STOPKA -->
-  <footer class="bg-purple-950 text-center py-6 mt-12" id="kontakt">
-    <p class="text-sm text-purple-300"> 2025 The Bebocks | <a href="https://www.instagram.com/the_bebocks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="underline text-purple-400">Social Media</a></p>
+  <footer class="bg-black text-center py-6 mt-12" id="kontakt">
+    <p class="text-sm">2025 The Bebocks | <a href="https://www.instagram.com/the_bebocks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="underline">Social Media</a></p>
   </footer>
 
 </body>
